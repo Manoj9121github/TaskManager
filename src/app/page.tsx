@@ -1,14 +1,16 @@
-import Image from "next/image";
-import TaskMain from "./main/page";
-import TaskPage from "./taskpage/page";
-import QuoteGenerator from "./qoutes/page";
+
+import TaskTable from "./alltask/page";
+
+
 
 export default function Home() {
   return (
     <div>
       
-      <TaskPage/>
-      <QuoteGenerator/>
+      
+      <TaskTable/>
+      
+      
     </div>
   );
 }
