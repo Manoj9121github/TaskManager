@@ -64,6 +64,7 @@ const TaskTable = () => {
       date: dueDate,
       completed: false,
     };
+    console.log(UpdateTask.id)
 
     setTasks([...tasks, UpdateTask]);
     setNewTask("");
@@ -92,9 +93,7 @@ const TaskTable = () => {
         return true;
     }
 
-    const matchesSearchTerm = task.name.toLowerCase().includes(searchTerm.toLowerCase());
-
-    return matchesFilter && matchesSearchTerm;
+ 
   });
 
   const handleDelete = (taskId: number) => {
